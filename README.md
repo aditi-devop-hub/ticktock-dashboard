@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕒 Ticktock Dashboard – Tentwenty Frontend Assessment
 
-## Getting Started
+This project is a clean and responsive timesheet dashboard built using **Next.js** and **TypeScript**, styled with **vanilla CSS**. It replicates the Figma design closely and follows modern frontend development best practices.
 
-First, run the development server:
+---
 
+## 🔗 Live Demo
+
+[▶️ View the Deployed Project](https://ticktock-dashboard.vercel.app)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. **Clone the Repository**
 ```bash
+git clone https://github.com/aditi-devop-hub/ticktock-dashboard.git
+cd ticktock-dashboard
+
+Install Dependencies
+npm install
+
+Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in your browser
+Visit: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🧩 Tech Stack
+Next.js – App Router version
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TypeScript
 
-## Learn More
+CSS Modules / Regular CSS
 
-To learn more about Next.js, take a look at the following resources:
+Vercel – Deployment platform
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📁 Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📁 app/
+📁 components/
+📁 public/
+📁 styles/
+📁 types/
+📁 utils/
+📄 package.json
+📄 tsconfig.json
+📄 README.md
 
-## Deploy on Vercel
+🧠 Features
+⏱️ Timesheet dashboard with weekly task view
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+➕ Add/Edit modal for task entries
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📋 Project dropdown with edit/delete options
+
+🧼 Clean UI, modular components
+
+📱 Responsive layout as per Figma
+
+✏️ Assumptions & Notes
+State and task data are handled locally in memory
+
+No database or backend integration is used
+
+Login/auth is considered out of scope
+
+Dummy data used for projects/tasks
+
+UI strictly follows provided Figma layout
+
+⏳ Time Spent
+~8–10 hours, including:
+
+Layout & component structure
+
+Modal & dropdown features
+
+CSS styling and responsiveness
+
+Code cleanup and Vercel deployment
+
+📄 License
+This project is submitted as part of the Tentwenty Frontend Assessment. It is not intended for production use.
+
+🙋‍♀️ Contact
+👩‍💻 Aditi Chodankar
+📧 aditichodankar21@gmail.com
+
+
+
+---
+
+
+
+
+
+
+
