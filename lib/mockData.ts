@@ -11,7 +11,7 @@ export type TimesheetEntry = {
 };
 
 // Store entries with correct type
-let timesheetEntries: TimesheetEntry[] = [
+const timesheetEntries: TimesheetEntry[] = [
   {
     id: 1,
     project: 'Ticktock Redesign',
