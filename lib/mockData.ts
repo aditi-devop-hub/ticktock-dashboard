@@ -1,29 +1,42 @@
 // lib/mockData.ts
+// lib/mockData.ts
 
-let timesheetEntries: any[] = [
+// Define a proper type
+export type TimesheetEntry = {
+  id: number;
+  project: string;
+  typeOfWork: string;
+  description: string;
+  hours: number;
+};
+
+// Store entries with correct type
+let timesheetEntries: TimesheetEntry[] = [
   {
     id: 1,
     project: 'Ticktock Redesign',
     typeOfWork: 'Design',
     description: 'Initial wireframes',
-    hours: 6
+    hours: 6,
   },
   {
     id: 2,
     project: 'Client Portal',
     typeOfWork: 'Development',
     description: 'Login API integration',
-    hours: 8
-  }
+    hours: 8,
+  },
 ];
 
-export function getEntries() {
+// Return all entries
+export function getEntries(): TimesheetEntry[] {
   return timesheetEntries;
 }
 
-export function addEntry(entry: any) {
+// Add a new entry
+export function addEntry(entry: Omit<TimesheetEntry, 'id'>): void {
   timesheetEntries.push({
     id: timesheetEntries.length + 1,
-    ...entry
+    ...entry,
   });
 }
