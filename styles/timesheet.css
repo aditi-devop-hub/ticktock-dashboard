@@ -1,0 +1,199 @@
+/* ===== Global Layout ===== */
+.timesheet-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.timesheet-header,
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.timesheet-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.user {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ===== Week Info ===== */
+.week-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.week-range,
+.date-range {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* ===== Progress Bar ===== */
+.progress {
+  margin: 24px 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.fill {
+  background-color: #f59e0b;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* ===== Day & Tasks ===== */
+.day-entry,
+.day-section {
+  margin-bottom: 32px;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.day-entry h3,
+.day-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* ===== Task Row ===== */
+.task-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: background 0.2s ease;
+}
+
+.task-row:hover {
+  background-color: #f3f4f6;
+}
+
+.task-row input,
+.task-row span,
+.project-dropdown {
+  flex: 1;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+}
+
+.project {
+  background: #eee;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.project-dropdown {
+  background-color: #fff;
+  color: #374151;
+}
+
+/* ===== Add Task Button ===== */
+.add-task {
+  margin-top: 8px;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-task:hover {
+  background-color: #1d4ed8;
+}
+
+.add-task:focus,
+.add-task:active {
+  outline: none;
+}
+
+/* ===== Bonus Entry Button ===== */
+.bonus-button {
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bonus-button:hover {
+  background-color: #1e40af;
+}
+
+.bonus-button:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* ===== Kebab Menu Button ===== */
+.menu-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* ===== Footer ===== */
+footer,
+.footer {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}

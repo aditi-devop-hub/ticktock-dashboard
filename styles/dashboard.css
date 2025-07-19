@@ -1,0 +1,169 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-header {
+  background: #fff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-info {
+  color: #555;
+  font-size: 14px;
+}
+
+.dashboard-main {
+  background: #fff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-size: 14px;
+}
+
+.timesheet-table th {
+  text-align: left;
+  color: #888;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+.timesheet-table td {
+  padding: 12px 8px;
+  background: #f9fafb;
+  border-radius: 4px;
+}
+
+.action {
+  color: #1d4ed8;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.badge.green {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badge.yellow {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+
+.badge.pink {
+  background-color: #fce7f3;
+  color: #9d174d;
+}
+
+.badge.gray {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.dashboard-footer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+.status-info-box {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  background: #facc15;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #111;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  line-height: 1.5;
+  z-index: 1000;
+}
+
+.status-info-box h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.dev-credit {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+.delete-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+
+
+.timesheet-table tbody tr:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+button {
+  transition: all 0.2s ease;
+}
+
+
+.timesheet-table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.delete-btn:hover {
+  background: #d32f2f;
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .status-info-box {
+    width: 90%;
+    right: 5%;
+    font-size: 0.85rem;
+  }
+}
