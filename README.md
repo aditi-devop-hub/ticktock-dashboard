@@ -72,7 +72,11 @@ No database or backend integration is used
 
 Login/auth is considered out of scope
 
-Dummy data used for projects/tasks
+Dummy Login Credentials
+✅ Email: test@a.com  
+✅ Password: 123456  
+☑️ (Optional) Check "Remember me"  
+🟦 Click "Sign In" to continue to the dashboard.
 
 UI strictly follows provided Figma layout
 
